@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm Portal Login &amp; Join | Pumpkin Patch &amp; Fall Festival Farm</title>
+  <meta name="description" content="Sign in or create your farm guest account. Manage festival tickets, season passes, private bonfire bookings, and receive exclusive harvest updates.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body class="login-page-body">
+
+  <!-- Preloader -->
+  <div class="page-loader" aria-hidden="true">
+    <div class="loader-pumpkin-spinner">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 6V12" stroke="#34482B" stroke-width="3" stroke-linecap="round"/>
+        <path d="M28 8C31 7 34 8 36 10" stroke="#34482B" stroke-width="2.5" stroke-linecap="round"/>
+        <ellipse cx="24" cy="28" rx="18" ry="15" fill="#E86A17"/>
+        <ellipse cx="24" cy="28" rx="10" ry="15" fill="#FF7A00"/>
+        <ellipse cx="24" cy="28" rx="4" ry="15" fill="#F4BA4E"/>
+      </svg>
+    </div>
+    <div class="loader-text">Farm Guest Portal</div>
+  </div>
+
+  <div class="login-page-wrapper">
+
+    <!-- Dedicated Clean Topbar: Brand Identity, RTL, Dark Mode, Back Home -->
+    <header class="login-topbar">
+      <!-- Brand Logo, Name, and Small Text (No Nav Links) -->
+      <a href="index.html" class="brand-logo-link" aria-label="Pumpkin Patch and Fall Festival Farm Home">
+        <div class="brand-icon-wrapper" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 3C16 3 17 7 14 9" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M16 6C19 5 22 7 23 8" stroke="#F4BA4E" stroke-width="2" stroke-linecap="round"/>
+            <path d="M16 9C9.37 9 4 13.92 4 20C4 26.08 9.37 29 16 29C22.63 29 28 26.08 28 20C28 13.92 22.63 9 16 9Z" fill="#FAF7F0" fill-opacity="0.2"/>
+            <path d="M16 9C12.5 9 10 13.92 10 20C10 26.08 12.5 29 16 29C19.5 29 22 26.08 22 20C22 13.92 19.5 9 16 9Z" fill="#FAF7F0" fill-opacity="0.3"/>
+            <path d="M16 9C14.5 9 13.5 13.92 13.5 20C13.5 26.08 14.5 29 16 29C17.5 29 18.5 26.08 18.5 20C18.5 13.92 17.5 9 16 9Z" fill="#FAF7F0" fill-opacity="0.4"/>
+            <path d="M16 9C9.37 9 4 13.92 4 20C4 26.08 9.37 29 16 29C22.63 29 28 26.08 28 20C28 13.92 22.63 9 16 9Z" stroke="#FFFFFF" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-name">Pumpkin Patch</span>
+          <span class="brand-subtext">&amp; Fall Festival Farm</span>
+        </div>
+      </a>
+
+      <!-- Controls: RTL Button, Dark Mode Button, Back Link -->
+      <div class="login-topbar-controls">
+        <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction" title="Toggle RTL / LTR">RTL</button>
+        <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="index.html" class="btn-back-home" title="Return to Farm Homepage">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Back to Farm</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Auth Experience: Split Editorial Architecture -->
+    <main class="login-body-content">
+      <div class="login-split-card">
+
+        <!-- Left Visual Editorial Panel -->
+        <div class="login-visual-panel">
+          <div>
+            <span class="badge" style="background-color: var(--color-bright-orange); color: #FFFFFF;">Autumn Guest Portal</span>
+            <h1 class="login-visual-heading">Your Gateway to Harvest Celebrations</h1>
+            <p class="login-visual-lead">
+              Sign in to manage your festival season pass, download mobile gate barcodes, or book private harvest gathering bonfires.
+            </p>
+
+            <div class="login-benefits-list">
+              <div class="login-benefit-item">
+                <div class="login-benefit-icon" aria-hidden="true">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Instant barcode gate access on your mobile phone</span>
+              </div>
+              <div class="login-benefit-item">
+                <div class="login-benefit-icon" aria-hidden="true">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>15% discount code on farm market cider &amp; baked donuts</span>
+              </div>
+              <div class="login-benefit-item">
+                <div class="login-benefit-icon" aria-hidden="true">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Priority booking for private bonfire pits &amp; tractor rides</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="login-quote-box">
+            <p class="login-quote-text">
+              &ldquo;Having all our family tickets saved on our phones made walking right through the orchard gate effortless.&rdquo;
+            </p>
+            <div class="login-quote-author">Eleanor &amp; David Miller &bull; Season Pass Holders</div>
+          </div>
+        </div>
+
+        <!-- Right Form Panel -->
+        <div class="login-form-panel">
+
+          <!-- Tab Selection (Sign In vs Create Account) -->
+          <div class="login-tabs-nav" role="tablist" aria-label="Account Access Options">
+            <button type="button" class="login-tab-btn active" data-target="tabSignIn" role="tab" aria-selected="true" aria-controls="tabSignIn">
+              Sign In
+            </button>
+            <button type="button" class="login-tab-btn" data-target="tabRegister" role="tab" aria-selected="false" aria-controls="tabRegister">
+              Create Account
+            </button>
+          </div>
+
+          <!-- PANE 1: SIGN IN -->
+          <div class="login-tab-pane active" id="tabSignIn" role="tabpanel" aria-label="Sign In to Farm Account">
+            <h2 class="login-pane-title">Welcome Back</h2>
+            <p class="login-pane-sub">Enter your email and password to access your tickets and farm perks.</p>
+
+            <form class="auth-form" onsubmit="event.preventDefault(); alert('Welcome back! You have successfully signed in.'); window.location.href='tickets.html';">
+              <div class="form-group">
+                <label class="form-label" for="signinEmail">Email Address</label>
+                <div class="login-input-wrapper">
+                  <span class="login-input-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </span>
+                  <input type="email" id="signinEmail" class="form-input" placeholder="sarah@example.com" required autocomplete="email">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="signinPassword">Password</label>
+                <div class="login-input-wrapper">
+                  <span class="login-input-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </span>
+                  <input type="password" id="signinPassword" class="form-input" placeholder="••••••••" required autocomplete="current-password">
+                  <button type="button" class="password-toggle-btn" data-input="signinPassword" aria-label="Show password">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="login-helpers-row">
+                <label class="login-checkbox-label">
+                  <input type="checkbox" id="rememberMe" checked>
+                  <span>Remember me for 30 days</span>
+                </label>
+                <a href="#" class="login-forgot-link" onclick="event.preventDefault(); alert('Password reset instructions sent to your email.');">Forgot password?</a>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 1.5rem;">
+                <span>Sign In to Farm Account</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+
+            <div class="login-divider">
+              <span>Or Continue With</span>
+            </div>
+
+            <div class="social-auth-grid">
+              <button type="button" class="social-auth-btn" onclick="alert('Google authentication connected.');">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
+                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+                </svg>
+                <span>Google</span>
+              </button>
+              <button type="button" class="social-auth-btn" onclick="alert('Apple ID connected.');">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.89c.66-.82 1.11-1.96.99-3.1-.96.04-2.18.66-2.87 1.48-.61.71-1.15 1.87-1.01 2.98 1.09.08 2.23-.55 2.89-1.36z"/>
+                </svg>
+                <span>Apple ID</span>
+              </button>
+            </div>
+
+            <div class="login-guest-cta">
+              Visiting today without an account? 
+              <a href="tickets.html" class="login-guest-link">Continue to Guest Ticketing &rarr;</a>
+            </div>
+          </div>
+
+          <!-- PANE 2: CREATE ACCOUNT -->
+          <div class="login-tab-pane" id="tabRegister" role="tabpanel" aria-label="Create New Farm Guest Account">
+            <h2 class="login-pane-title">Join Farm Guests</h2>
+            <p class="login-pane-sub">Create your free account to unlock discounts, track bookings, and save favorites.</p>
+
+            <form class="auth-form" onsubmit="event.preventDefault(); alert('Account created! Welcome to Pumpkin Patch Farm.'); window.location.href='tickets.html';">
+              <div class="form-group">
+                <label class="form-label" for="regFullName">Full Name *</label>
+                <div class="login-input-wrapper">
+                  <span class="login-input-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </span>
+                  <input type="text" id="regFullName" class="form-input" placeholder="Sarah Jenkins" required autocomplete="name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="regEmail">Email Address *</label>
+                <div class="login-input-wrapper">
+                  <span class="login-input-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </span>
+                  <input type="email" id="regEmail" class="form-input" placeholder="sarah@example.com" required autocomplete="email">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="regPassword">Create Password *</label>
+                <div class="login-input-wrapper">
+                  <span class="login-input-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </span>
+                  <input type="password" id="regPassword" class="form-input" placeholder="Minimum 8 characters" required autocomplete="new-password">
+                  <button type="button" class="password-toggle-btn" data-input="regPassword" aria-label="Show password">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="login-checkbox-label" style="align-items: flex-start; gap: 0.65rem;">
+                  <input type="checkbox" id="regNewsletter" checked style="margin-top: 0.2rem;">
+                  <span>Send me harvest festival alerts, weekend weather notices, and season pass discount codes.</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 1.25rem;">
+                <span>Create Free Farm Account</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+
+            <div class="login-guest-cta">
+              Already have an account? 
+              <a href="#" class="login-guest-link" onclick="event.preventDefault(); document.querySelector('[data-target=\'tabSignIn\']').click();">Sign In instead &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

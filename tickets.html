@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tickets, Season Passes &amp; Hours | Pumpkin Patch &amp; Fall Festival Farm</title>
+  <meta name="description"
+    content="Purchase online farm admission passes, view season membership options, and check daily operating hours for pumpkin picking, corn maze, and hayrides.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div class="page-loader" aria-hidden="true">
+    <div class="loader-pumpkin-spinner">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 6V12" stroke="#34482B" stroke-width="3" stroke-linecap="round" />
+        <path d="M28 8C31 7 34 8 36 10" stroke="#34482B" stroke-width="2.5" stroke-linecap="round" />
+        <ellipse cx="24" cy="28" rx="18" ry="15" fill="#E86A17" />
+        <ellipse cx="24" cy="28" rx="10" ry="15" fill="#FF7A00" />
+        <ellipse cx="24" cy="28" rx="4" ry="15" fill="#F4BA4E" />
+      </svg>
+    </div>
+    <div class="loader-text">Tickets &amp; Hours</div>
+  </div>
+
+  <!-- Fixed Header (Desktop Single-Line & Mobile System) -->
+  <header class="site-header" id="main-header">
+    <div class="container header-container">
+
+      <a href="index.html" class="brand-logo-link" aria-label="Pumpkin Patch and Fall Festival Farm Home">
+        <div class="brand-icon-wrapper" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 3C16 3 17 7 14 9" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M16 6C19 5 22 7 23 8" stroke="#F4BA4E" stroke-width="2" stroke-linecap="round" />
+            <path d="M16 9C9.37 9 4 13.92 4 20C4 26.08 9.37 29 16 29C22.63 29 28 26.08 28 20C28 13.92 22.63 9 16 9Z"
+              fill="#FAF7F0" fill-opacity="0.2" />
+            <path d="M16 9C12.5 9 10 13.92 10 20C10 26.08 12.5 29 16 29C19.5 29 22 26.08 22 20C22 13.92 19.5 9 16 9Z"
+              fill="#FAF7F0" fill-opacity="0.3" />
+            <path
+              d="M16 9C14.5 9 13.5 13.92 13.5 20C13.5 26.08 14.5 29 16 29C17.5 29 18.5 26.08 18.5 20C18.5 13.92 17.5 9 16 9Z"
+              fill="#FAF7F0" fill-opacity="0.4" />
+            <path d="M16 9C9.37 9 4 13.92 4 20C4 26.08 9.37 29 16 29C22.63 29 28 26.08 28 20C28 13.92 22.63 9 16 9Z"
+              stroke="#FFFFFF" stroke-width="2" />
+          </svg>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-name">Pumpkin Patch</span>
+          <span class="brand-subtext">&amp; Fall Festival Farm</span>
+        </div>
+      </a>
+
+      <!-- Exactly 6 Nav Items -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true"
+              id="homeDropdownBtn">
+              <span>Home</span>
+              <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="homeDropdownBtn">
+              <a href="index.html" class="dropdown-item">
+                <span>Home 1 (Harvest Edition)</span>
+              </a>
+              <a href="home-2.html" class="dropdown-item">
+                <span>Home 2 (Festival Fair)</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="attractions.html" class="nav-link">Attractions</a></li>
+          <li class="nav-item"><a href="tickets.html" class="nav-link active">Tickets &amp; Hours</a></li>
+          <li class="nav-item"><a href="field-trips.html" class="nav-link">School Field Trips</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Utilities -->
+      <div class="header-actions">
+        <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction"
+          title="Toggle RTL / LTR">RTL</button>
+        <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="login.html" class="btn-login header-desktop-login" aria-label="Open Login and Register Page">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span>Login / Join</span>
+        </a>
+        <button type="button" class="mobile-toggle-btn" aria-label="Open navigation menu" aria-expanded="false"
+          aria-controls="mobileDrawer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo-link" aria-label="Pumpkin Patch and Fall Festival Farm Home">
+          <div class="brand-icon-wrapper" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 3C16 3 17 7 14 9" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+              <path d="M16 6C19 5 22 7 23 8" stroke="#F4BA4E" stroke-width="2" stroke-linecap="round" />
+              <path d="M16 9C9.37 9 4 13.92 4 20C4 26.08 9.37 29 16 29C22.63 29 28 26.08 28 20C28 13.92 22.63 9 16 9Z"
+                fill="#FAF7F0" fill-opacity="0.2" />
+              <path d="M16 9C12.5 9 10 13.92 10 20C10 26.08 12.5 29 16 29C19.5 29 22 26.08 22 20C22 13.92 19.5 9 16 9Z"
+                fill="#FAF7F0" fill-opacity="0.3" />
+              <path
+                d="M16 9C14.5 9 13.5 13.92 13.5 20C13.5 26.08 14.5 29 16 29C17.5 29 18.5 26.08 18.5 20C18.5 13.92 17.5 9 16 9Z"
+                fill="#FAF7F0" fill-opacity="0.4" />
+              <path d="M16 9C9.37 9 4 13.92 4 20C4 26.08 9.37 29 16 29C22.63 29 28 26.08 28 20C28 13.92 22.63 9 16 9Z"
+                stroke="#FFFFFF" stroke-width="2" />
+            </svg>
+          </div>
+          <div class="brand-text-group">
+            <span class="brand-name">Pumpkin Patch</span>
+            <span class="brand-subtext">&amp; Fall Festival Farm</span>
+          </div>
+        </a>
+        <button type="button" class="mobile-close-btn" aria-label="Close navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-list">
+        <div class="mobile-nav-item">
+          <button type="button" class="mobile-accordion-btn" aria-expanded="false">
+            <span>Home</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="mobile-accordion-content">
+            <a href="index.html" class="mobile-sub-link">Home 1 (Harvest Edition)</a>
+            <a href="home-2.html" class="mobile-sub-link">Home 2 (Festival Fair)</a>
+          </div>
+        </div>
+        <a href="about.html" class="mobile-nav-link">About Us</a>
+        <a href="attractions.html" class="mobile-nav-link">Attractions</a>
+        <a href="tickets.html" class="mobile-nav-link active">Tickets &amp; Hours</a>
+        <a href="field-trips.html" class="mobile-nav-link">School Field Trips</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <a href="login.html" class="btn-login" style="width:100%; justify-content:center;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span>Login / Join</span>
+      </a>
+
+    </div>
+  </aside>
+
+  <!-- Login Modal -->
+  <div class="auth-modal-backdrop" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <div class="auth-modal-card">
+      <div class="auth-modal-header">
+        <h2 class="auth-modal-title" id="authTitle">Guest Access</h2>
+        <button type="button" class="auth-modal-close" aria-label="Close dialog"
+          style="font-size:1.4rem; color:var(--text-muted); cursor:pointer;">&times;</button>
+      </div>
+      <div class="auth-tabs-nav" role="tablist">
+        <button type="button" class="auth-tab-btn active" data-tab="login" role="tab" aria-selected="true">Sign
+          In</button>
+        <button type="button" class="auth-tab-btn" data-tab="register" role="tab" aria-selected="false">Create
+          Account</button>
+      </div>
+      <div class="auth-modal-body">
+        <div class="auth-tab-pane active" id="tab-login" role="tabpanel">
+          <form id="loginForm" onsubmit="event.preventDefault(); alert('Signed in successfully!');">
+            <div class="form-group">
+              <label class="form-label" for="loginEmail">Email Address</label>
+              <input type="email" id="loginEmail" class="form-input" placeholder="you@harvestfestival.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="loginPassword">Password</label>
+              <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="auth-submit-btn">Sign In to Dashboard</button>
+          </form>
+        </div>
+        <div class="auth-tab-pane" id="tab-register" role="tabpanel">
+          <form id="registerForm" onsubmit="event.preventDefault(); alert('Account created successfully!');">
+            <div class="form-group">
+              <label class="form-label" for="regName">Full Name</label>
+              <input type="text" id="regName" class="form-input" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="regEmail">Email Address</label>
+              <input type="email" id="regEmail" class="form-input" placeholder="you@harvestfestival.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="regPassword">Create Password</label>
+              <input type="password" id="regPassword" class="form-input" placeholder="At least 8 characters" required>
+            </div>
+            <button type="submit" class="auth-submit-btn">Complete Registration</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT: EXACTLY 5 MAIN CONTENT SECTIONS -->
+  <main class="site-main">
+
+    <!-- SECTION 1: HERO DIRECTORY & LIVE STATUS BAR -->
+    <section class="tickets-hero-section" id="tickets-hero">
+      <div class="container">
+
+        <div class="tickets-hero-content">
+          <span class="section-eyebrow">Fall Season 2026 Passes</span>
+          <h1 class="section-heading">Farm Admission &amp; Hours</h1>
+          <p class="section-desc" style="margin: 0 auto;">
+            Choose from flexible single-day passes, weekend festival wristbands, or unlimited season memberships.
+            Children under 3 enter free every day.
+          </p>
+
+          <div class="tickets-status-strip">
+            <div class="status-pill-item">
+              <div class="status-indicator-dot"></div>
+              <span>Today's Farm Status: Open</span>
+            </div>
+            <div class="status-pill-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Current Hours: 9:00 AM &ndash; 7:00 PM</span>
+            </div>
+            <div class="status-pill-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <span>Forecast: 68&deg;F Crisp Autumn Sun</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: SEASONAL TICKET TIER MATRIX (3 STRICTLY EVEN CARDS) -->
+    <section class="tiers-section" id="ticket-tiers">
+      <div class="container">
+
+        <div class="section-header-centered">
+          <span class="section-eyebrow">Choose Your Experience</span>
+          <h2 class="section-heading">Admission Pass Options</h2>
+          <p class="section-desc" style="margin: 0 auto;">
+            All ticket passes include complimentary on-site parking, farm map, and full wagon hayride access.
+          </p>
+        </div>
+
+        <div class="tiers-grid">
+
+          <!-- Card 1 -->
+          <div class="tier-card">
+            <div>
+              <h3 class="tier-title">Weekday Harvest Pass</h3>
+              <p class="tier-sub">Ideal for peaceful strolls through the patch, unhurried corn maze exploration, and
+                photo sessions.</p>
+
+              <div class="tier-price-box">
+                <span class="tier-currency">$</span>
+                <span class="tier-amount">16</span>
+                <span class="tier-unit">/ person</span>
+              </div>
+
+              <div class="tier-features">
+                <div class="tier-feature-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Valid Monday through Thursday</span>
+                </div>
+                <div class="tier-feature-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Unlimited 10-Acre Corn Maze access</span>
+                </div>
+                <div class="tier-feature-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Full access to 45-Acre Pumpkin Fields</span>
+                </div>
+                <div class="tier-feature-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Free farm parking &amp; tractor rides</span>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-secondary" style="width:100%; text-align:center;"
+              onclick="alert('Weekday pass added to cart!');">Select Weekday Pass</button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="tier-card tier-popular">
+            <span class="tier-popular-tag">Best Value for Families</span>
+            <div>
+              <h3 class="tier-title">Weekend Festival Pass</h3>
+              <p class="tier-sub">Complete weekend carnival access including bluegrass concerts, petting corral, and
+                night bonfires.</p>
+
+              <div class="tier-price-box">
+                <span class="tier-currency">$</span>
+                <span class="tier-amount">24</span>
+                <span class="tier-unit">/ person</span>
+              </div>
+
+              <div class="tier-features">
+                <div class="tier-feature-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Valid Friday, Saturday, Sunday &amp; Holidays</span>
+                </div>
+                <div class="tier-feature-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Includes all Weekday Harvest attractions</span>
+                </div>
+                <div class="tier-feature-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Live bluegrass performances in the barn</span>
+                </div>
+                <div class="tier-feature-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Access to Twilight Bonfire Circles</span>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-primary" style="width:100%; text-align:center;"
+              onclick="alert('Weekend pass added to cart!');">Select Weekend Pass</button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="tier-card">
+            <div>
+              <h3 class="tier-title">Unlimited Season </h3>
+              <p class="tier-sub">Return as often as you wish all 7 autumn weeks with exclusive bakery discounts and
+                early access.</p>
+
+              <div class="tier-price-box">
+                <span class="tier-currency">$</span>
+                <span class="tier-amount">58</span>
+                <span class="tier-unit">/ pass</span>
+              </div>
+
+              <div class="tier-features">
+                <div class="tier-feature-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Unlimited entry throughout the 2026 season</span>
+                </div>
+                <div class="tier-feature-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>10% discount at Farm Market &amp; Cider Mill</span>
+                </div>
+                <div class="tier-feature-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>VIP express check-in gate lane</span>
+                </div>
+                <div class="tier-feature-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Complimentary carving pumpkin included</span>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-secondary" style="width:100%; text-align:center;"
+              onclick="alert('Season membership added to cart!');">Select Season Pass</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: PURE VISUAL VISITOR GALLERY ("ONLY IMAGE" IMMERSION) -->
+    <section class="visitor-gallery-section" id="pure-visitor-gallery">
+      <div class="container">
+
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem;">
+          <div>
+            <span class="section-eyebrow">Guest Moments</span>
+            <h2 class="section-heading" style="margin-bottom:0.5rem;">Autumn Memories on the Grounds</h2>
+            <p class="section-desc">Snapshots of real visitors soaking up crisp air, golden foliage, and farm
+              traditions.</p>
+          </div>
+          <span style="font-size:0.85rem; font-weight:700; color:var(--color-pumpkin);">Farm Guest Lookbook</span>
+        </div>
+
+        <div class="visitor-gallery-grid">
+
+          <div class="visitor-gallery-item">
+            <img src="assets/images/gallery/p36.jpg" alt="Autumn farmland path lined with golden maple trees"
+              class="visitor-gallery-img" width="800" height="530" loading="lazy">
+            <span class="visitor-gallery-pill">Farmland Orchard Trail</span>
+          </div>
+
+          <div class="visitor-gallery-item">
+            <img src="assets/images/gallery/p37.jpg" alt="Rustic country farmstead under warm afternoon autumn sun"
+              class="visitor-gallery-img" width="800" height="530" loading="lazy">
+            <span class="visitor-gallery-pill">The Country Homestead</span>
+          </div>
+
+          <div class="visitor-gallery-item">
+            <img src="assets/images/gallery/p38.jpg" alt="Solitary golden autumn oak in the harvest pasture"
+              class="visitor-gallery-img" width="800" height="530" loading="lazy">
+            <span class="visitor-gallery-pill">Sunset Pasture View</span>
+          </div>
+
+          <div class="visitor-gallery-item">
+            <img src="assets/images/gallery/p39.jpg" alt="Golden sunlight illuminating the harvest meadow"
+              class="visitor-gallery-img" width="800" height="530" loading="lazy">
+            <span class="visitor-gallery-pill">Harvest Golden Hour</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: OPERATING SCHEDULE & FARM HOURS BOARD -->
+    <section class="hours-section" id="farm-hours">
+      <div class="container">
+
+        <div class="section-header-centered">
+          <span class="section-eyebrow">Plan Your Arrival</span>
+          <h2 class="section-heading">Daily Farm Operating Hours</h2>
+          <p class="section-desc" style="margin: 0 auto;">
+            Our gates open promptly at 9:00 AM. Ticket sales conclude 90 minutes before evening gate closure.
+          </p>
+        </div>
+
+        <div class="hours-board-grid">
+
+          <!-- Column 1: Weekday Schedule -->
+          <div class="hours-col">
+            <div class="hours-col-header">
+              <h3 class="hours-col-title">Weekday Harvest Hours</h3>
+              <span class="hours-col-sub">Monday through Thursday</span>
+            </div>
+            <div class="hours-list">
+              <div class="hours-item">
+                <span class="hours-item-name">Main Gates &amp; Parking</span>
+                <span class="hours-item-time">9:00 AM &ndash; 6:00 PM</span>
+              </div>
+              <div class="hours-item">
+                <span class="hours-item-name">Pumpkin Patch U-Pick</span>
+                <span class="hours-item-time">9:30 AM &ndash; 5:30 PM</span>
+              </div>
+              <div class="hours-item">
+                <span class="hours-item-name">10-Acre Corn Labyrinth</span>
+                <span class="hours-item-time">10:00 AM &ndash; 5:00 PM</span>
+              </div>
+              <div class="hours-item">
+                <span class="hours-item-name">Tractor Hayride Loops</span>
+                <span class="hours-item-time">10:00 AM &ndash; 5:00 PM</span>
+              </div>
+              <div class="hours-item">
+                <span class="hours-item-name">Farm Market &amp; Cider Bakery</span>
+                <span class="hours-item-time">9:00 AM &ndash; 6:30 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Weekend Schedule -->
+          <div class="hours-col">
+            <div class="hours-col-header">
+              <h3 class="hours-col-title">Weekend Festival Hours</h3>
+              <span class="hours-col-sub">Friday, Saturday &amp; Sunday</span>
+            </div>
+            <div class="hours-list">
+              <div class="hours-item">
+                <span class="hours-item-name">Main Gates &amp; Parking</span>
+                <span class="hours-item-time">9:00 AM &ndash; 9:30 PM</span>
+              </div>
+              <div class="hours-item">
+                <span class="hours-item-name">Pumpkin Patch U-Pick</span>
+                <span class="hours-item-time">9:30 AM &ndash; 6:30 PM</span>
+              </div>
+              <div class="hours-item">
+                <span class="hours-item-name">Daytime &amp; Flashlight Corn Maze</span>
+                <span class="hours-item-time">10:00 AM &ndash; 9:00 PM</span>
+              </div>
+              <div class="hours-item">
+                <span class="hours-item-name">Scenic &amp; Lantern Hayrides</span>
+                <span class="hours-item-time">10:00 AM &ndash; 8:30 PM</span>
+              </div>
+              <div class="hours-item">
+                <span class="hours-item-name">Food Truck Row &amp; Bonfire Pits</span>
+                <span class="hours-item-time">11:00 AM &ndash; 9:30 PM</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: TICKETING FINAL CTA (MANDATORY FINAL CTA SECTION) -->
+    <section class="tickets-cta-section" id="tickets-cta">
+      <div class="tickets-cta-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="tickets-cta-inner">
+          <span class="section-eyebrow"
+            style="background-color:rgba(229,169,60,0.2); color:var(--color-mustard); border:1px solid rgba(229,169,60,0.4);">
+            Instant Mobile Delivery
+          </span>
+          <h2 class="section-heading" style="color:#FAF7F0; font-size:clamp(2.2rem, 4vw, 3.4rem); margin-top:1rem;">
+            Purchase Ahead for Guaranteed Admission
+          </h2>
+          <p class="section-desc" style="color:#E3D9CC; margin: 0 auto 2.5rem; max-width:640px;">
+            Show your digital barcode at the express gate scanner right from your phone. Rain-check guarantees ensure
+            your pass remains valid if severe weather occurs.
+          </p>
+
+          <div style="display:flex; justify-content:center; gap:1.25rem; flex-wrap:wrap;">
+            <a href="#ticket-tiers" class="btn-primary" style="font-size:1.05rem; padding:0.95rem 2.2rem;">
+              <span>Select Passes Above</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+              </svg>
+            </a>
+            <a href="contact.html" class="btn-secondary" style="color:#FAF7F0; border-color:#FAF7F0;">Group Rates (15+
+              People)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared Autumn Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+
+        <div>
+          <a href="index.html" class="brand-logo-link" aria-label="Pumpkin Patch and Fall Festival Farm Home">
+            <div class="brand-icon-wrapper" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 3C16 3 17 7 14 9" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M16 6C19 5 22 7 23 8" stroke="#F4BA4E" stroke-width="2" stroke-linecap="round" />
+                <path d="M16 9C9.37 9 4 13.92 4 20C4 26.08 9.37 29 16 29C22.63 29 28 26.08 28 20C28 13.92 22.63 9 16 9Z"
+                  fill="#FAF7F0" fill-opacity="0.2" />
+                <path
+                  d="M16 9C12.5 9 10 13.92 10 20C10 26.08 12.5 29 16 29C19.5 29 22 26.08 22 20C22 13.92 19.5 9 16 9Z"
+                  fill="#FAF7F0" fill-opacity="0.3" />
+                <path
+                  d="M16 9C14.5 9 13.5 13.92 13.5 20C13.5 26.08 14.5 29 16 29C17.5 29 18.5 26.08 18.5 20C18.5 13.92 17.5 9 16 9Z"
+                  fill="#FAF7F0" fill-opacity="0.4" />
+                <path d="M16 9C9.37 9 4 13.92 4 20C4 26.08 9.37 29 16 29C22.63 29 28 26.08 28 20C28 13.92 22.63 9 16 9Z"
+                  stroke="#FFFFFF" stroke-width="2" />
+              </svg>
+            </div>
+            <div class="brand-text-group">
+              <span class="brand-name">Pumpkin Patch</span>
+              <span class="brand-subtext">&amp; Fall Festival Farm</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Celebrating the autumn season with organic pumpkin harvesting, legendary corn mazes, rustic hayrides, and
+            family festival traditions.
+          </p>
+          <div style="display:flex; gap:0.75rem;">
+            <span
+              style="padding:0.4rem 0.8rem; background:rgba(255,255,255,0.08); border-radius:9999px; font-size:0.8rem; color:#FAF7F0;">Est.
+              1994</span>
+            <span
+              style="padding:0.4rem 0.8rem; background:rgba(232,106,23,0.25); border-radius:9999px; font-size:0.8rem; color:var(--color-mustard);">Fall
+              Festival Certified</span>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Farm Attractions</h2>
+          <ul class="footer-links-list">
+            <li><a href="attractions.html" class="footer-link">Pick-Your-Own Pumpkins</a></li>
+            <li><a href="attractions.html" class="footer-link">Giant 10-Acre Corn Maze</a></li>
+            <li><a href="attractions.html" class="footer-link">Scenic Sunset Hayrides</a></li>
+            <li><a href="attractions.html" class="footer-link">Farm Petting Corral</a></li>
+            <li><a href="attractions.html" class="footer-link">Cider &amp; Bakery Mill</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Guest Services</h2>
+          <ul class="footer-links-list">
+            <li><a href="about.html" class="footer-link">About Our Heritage</a></li>
+            <li><a href="tickets.html" class="footer-link">Season Passes &amp; Hours</a></li>
+            <li><a href="field-trips.html" class="footer-link">School Field Trips</a></li>
+            <li><a href="contact.html" class="footer-link">Group Booking Enquiry</a></li>
+            <li><a href="contact.html" class="footer-link">Directions &amp; Parking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Farm Headquarters</h2>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>742 Autumn Cider Way, Harvest Valley, NY 12533</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span>(555) 786-7282</span>
+          </div>
+          <p class="footer-newsletter-text">Subscribe for harvest forecasts and festival ticket drops.</p>
+          <form class="footer-newsletter-form"
+            onsubmit="event.preventDefault(); alert('Subscribed to harvest alerts!');">
+            <input type="email" class="footer-newsletter-input" placeholder="Your email address" required
+              aria-label="Email for harvest newsletter">
+            <button type="submit" class="footer-newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Pumpkin Patch &amp; Fall Festival Farm. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          <a href="#" class="footer-bottom-link">Terms of Service</a>
+          <a href="#" class="footer-bottom-link">Farm Safety Guidelines</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top -->
+  <button type="button" class="scroll-top-btn" aria-label="Scroll back to top of page">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
