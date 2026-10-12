@@ -526,7 +526,7 @@ ul, ol {
   pointer-events: none;
 }
 
-/* Login Button in Header (Per User Explicit Instruction) */
+/* Login Button in Header (Legacy / Compatibility) */
 .btn-login {
   display: inline-flex;
   align-items: center;
@@ -549,6 +549,76 @@ ul, ol {
   background-color: var(--color-pumpkin-hover);
   box-shadow: 0 6px 18px rgba(232, 106, 23, 0.38);
   transform: translateY(-1px);
+}
+
+/* Primary Header CTA Button ("Get Tickets") */
+.btn-header-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.52rem 1.25rem;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--color-pumpkin), var(--color-bright-orange));
+  color: #FFFFFF !important;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 14px rgba(232, 106, 23, 0.32);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn-header-cta:hover {
+  background: linear-gradient(135deg, var(--color-pumpkin-hover), var(--color-pumpkin));
+  box-shadow: 0 6px 18px rgba(232, 106, 23, 0.42);
+  transform: translateY(-1px);
+  color: #FFFFFF !important;
+}
+
+.btn-header-cta svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+  stroke: currentColor;
+  flex-shrink: 0;
+}
+
+/* Mobile Drawer Primary CTA */
+.mobile-drawer-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  width: 100%;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--color-pumpkin), var(--color-bright-orange));
+  color: #FFFFFF !important;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 14px rgba(232, 106, 23, 0.3);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.mobile-drawer-cta:hover {
+  background: linear-gradient(135deg, var(--color-pumpkin-hover), var(--color-pumpkin));
+  box-shadow: 0 6px 18px rgba(232, 106, 23, 0.42);
+  transform: translateY(-1px);
+  color: #FFFFFF !important;
+}
+
+.mobile-drawer-cta svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  stroke: currentColor;
+  flex-shrink: 0;
 }
 
 /* Mobile Menu Hamburger Button */

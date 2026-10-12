@@ -96,13 +96,16 @@
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
-        <a href="login.html" class="btn-login header-desktop-login" aria-label="Open Login and Register Page">
+        <!-- Primary Header CTA: Get Tickets -->
+        <a href="tickets.html" class="btn-header-cta header-desktop-cta" aria-label="Get Festival Admission Tickets">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-            <circle cx="12" cy="7" r="4"></circle>
+            <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"></path>
+            <path d="M13 5v2"></path>
+            <path d="M13 17v2"></path>
+            <path d="M13 11v2"></path>
           </svg>
-          <span>Login / Join</span>
+          <span>Get Tickets</span>
         </a>
         <button type="button" class="mobile-toggle-btn" aria-label="Open navigation menu" aria-expanded="false"
           aria-controls="mobileDrawer">
@@ -176,66 +179,18 @@
     </div>
 
     <div class="mobile-drawer-footer">
-      <a href="login.html" class="btn-login" style="width:100%; justify-content:center;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+      <a href="tickets.html" class="mobile-drawer-cta" style="width:100%; justify-content:center;" aria-label="Get Festival Admission Tickets">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-          <circle cx="12" cy="7" r="4"></circle>
+          <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"></path>
+          <path d="M13 5v2"></path>
+          <path d="M13 17v2"></path>
+          <path d="M13 11v2"></path>
         </svg>
-        <span>Login / Join</span>
+        <span>Get Tickets</span>
       </a>
-
     </div>
   </aside>
-
-  <!-- Login Modal -->
-  <div class="auth-modal-backdrop" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
-    <div class="auth-modal-card">
-      <div class="auth-modal-header">
-        <h2 class="auth-modal-title" id="authTitle">Guest Access</h2>
-        <button type="button" class="auth-modal-close" aria-label="Close dialog"
-          style="font-size:1.4rem; color:var(--text-muted); cursor:pointer;">&times;</button>
-      </div>
-      <div class="auth-tabs-nav" role="tablist">
-        <button type="button" class="auth-tab-btn active" data-tab="login" role="tab" aria-selected="true">Sign
-          In</button>
-        <button type="button" class="auth-tab-btn" data-tab="register" role="tab" aria-selected="false">Create
-          Account</button>
-      </div>
-      <div class="auth-modal-body">
-        <div class="auth-tab-pane active" id="tab-login" role="tabpanel">
-          <form id="loginForm" onsubmit="event.preventDefault(); alert('Signed in successfully!');">
-            <div class="form-group">
-              <label class="form-label" for="loginEmail">Email Address</label>
-              <input type="email" id="loginEmail" class="form-input" placeholder="you@harvestfestival.com" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="loginPassword">Password</label>
-              <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" required>
-            </div>
-            <button type="submit" class="auth-submit-btn">Sign In to Dashboard</button>
-          </form>
-        </div>
-        <div class="auth-tab-pane" id="tab-register" role="tabpanel">
-          <form id="registerForm" onsubmit="event.preventDefault(); alert('Account created successfully!');">
-            <div class="form-group">
-              <label class="form-label" for="regName">Full Name</label>
-              <input type="text" id="regName" class="form-input" placeholder="Jane Doe" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="regEmail">Email Address</label>
-              <input type="email" id="regEmail" class="form-input" placeholder="you@harvestfestival.com" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="regPassword">Create Password</label>
-              <input type="password" id="regPassword" class="form-input" placeholder="At least 8 characters" required>
-            </div>
-            <button type="submit" class="auth-submit-btn">Complete Registration</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- MAIN CONTENT: EXACTLY 6 MAIN CONTENT SECTIONS -->
   <main class="site-main">

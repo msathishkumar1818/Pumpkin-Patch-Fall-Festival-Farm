@@ -35,6 +35,7 @@
   }
 
   /* Header controls adjustment for tablet/mobile */
+  .header-desktop-cta,
   .header-desktop-login {
     display: none !important;
   }
@@ -246,6 +247,8 @@
   .nav-link,
   .dropdown-toggle,
   .mobile-nav-link,
+  .btn-header-cta,
+  .mobile-drawer-cta,
   .btn-login,
   .btn-primary,
   .btn-secondary {

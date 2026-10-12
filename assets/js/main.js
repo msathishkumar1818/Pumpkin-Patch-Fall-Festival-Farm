@@ -168,7 +168,7 @@
     }
 
     // 7. Auto-close mobile menu on any navigation click
-    const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-sub-link');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-sub-link, .mobile-drawer-cta');
     mobileLinks.forEach(link => {
       link.addEventListener('click', function () {
         closeMobileMenu();
