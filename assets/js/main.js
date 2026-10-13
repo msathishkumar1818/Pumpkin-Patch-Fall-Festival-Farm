@@ -97,6 +97,15 @@
       });
     }
 
+    // Auto-scroll active nav link into view on smaller touch screens
+    const activeNavLink = document.querySelector('.desktop-nav .nav-link.active, .desktop-nav .dropdown-toggle.active');
+    const desktopNav = document.querySelector('.desktop-nav');
+    if (activeNavLink && desktopNav && window.innerWidth <= 1200) {
+      setTimeout(() => {
+        activeNavLink.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      }, 150);
+    }
+
     // 5. Mobile Drawer Open/Close & Backdrop
     const mobileToggleBtn = document.querySelector('.mobile-toggle-btn');
     const mobileCloseBtn = document.querySelector('.mobile-close-btn');
@@ -137,9 +146,9 @@
       mobileNavBackdrop.addEventListener('click', closeMobileMenu);
     }
 
-    // Auto-close mobile drawer if user resizes window to desktop width (>1366px)
+    // Auto-close mobile drawer if user resizes window to desktop width (>1400px)
     window.addEventListener('resize', function () {
-      if (window.innerWidth > 1366) {
+      if (window.innerWidth > 1400) {
         closeMobileMenu();
       }
     });

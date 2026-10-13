@@ -58,6 +58,7 @@
           <!-- Item 1: Home Dropdown (Click-Only) -->
           <li class="nav-item has-dropdown">
             <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" id="homeDropdownBtn">
+              <span class="nav-active-dot"></span>
               <span>Home</span>
               <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"></polyline>
@@ -73,29 +74,29 @@
             </div>
           </li>
 
-          <!-- Item 2: About Us (Mandatory Inner Page) -->
+          <!-- Item 2: About Us -->
           <li class="nav-item">
-            <a href="about.html" class="nav-link">About Us</a>
+            <a href="about.html" class="nav-link"><span class="nav-active-dot"></span><span>About Us</span></a>
           </li>
 
           <!-- Item 3: Attractions -->
           <li class="nav-item">
-            <a href="attractions.html" class="nav-link">Attractions</a>
+            <a href="attractions.html" class="nav-link"><span class="nav-active-dot"></span><span>Attractions</span></a>
           </li>
 
           <!-- Item 4: Tickets &amp; Hours -->
           <li class="nav-item">
-            <a href="tickets.html" class="nav-link">Tickets &amp; Hours</a>
+            <a href="tickets.html" class="nav-link"><span class="nav-active-dot"></span><span>Tickets &amp; Hours</span></a>
           </li>
 
           <!-- Item 5: School Field Trips -->
           <li class="nav-item">
-            <a href="field-trips.html" class="nav-link">School Field Trips</a>
+            <a href="field-trips.html" class="nav-link"><span class="nav-active-dot"></span><span>School Field Trips</span></a>
           </li>
 
-          <!-- Item 6: Contact (Directly Visible) -->
+          <!-- Item 6: Contact -->
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="contact.html" class="nav-link"><span class="nav-active-dot"></span><span>Contact</span></a>
           </li>
 
         </ul>
@@ -134,12 +135,13 @@
             <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
         </button>
+
       </div>
 
     </div>
   </header>
 
-  <!-- 3. Mobile Navigation Drawer & Backdrop -->
+  <!-- Mobile Navigation Drawer & Backdrop -->
   <div class="mobile-nav-backdrop" aria-hidden="true"></div>
   <aside class="mobile-nav-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
     <div>
@@ -174,7 +176,6 @@
       </div>
 
       <nav class="mobile-nav-list">
-        <!-- Mobile Accordion for Home (Click Only) -->
         <div class="mobile-nav-item">
           <button type="button" class="mobile-accordion-btn" aria-expanded="false">
             <span>Home</span>
@@ -196,10 +197,21 @@
       </nav>
     </div>
 
-    <!-- Mobile Drawer Footer with Primary CTA -->
     <div class="mobile-drawer-footer">
-      <a href="tickets.html" class="mobile-drawer-cta" style="width:100%; justify-content:center;" aria-label="Get Festival Admission Tickets">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <div class="mobile-drawer-utilities">
+        <span class="drawer-util-label">Settings &amp; Theme</span>
+        <div class="drawer-util-buttons">
+          <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction" title="Toggle RTL / LTR">RTL</button>
+          <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle Theme">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <a href="tickets.html" class="mobile-drawer-cta" aria-label="Get Festival Admission Tickets">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"></path>
           <path d="M13 5v2"></path>
           <path d="M13 17v2"></path>
@@ -210,17 +222,24 @@
     </div>
   </aside>
 
-
-
   <!-- Main System Demonstration Content -->
   <main class="site-main">
-    <section style="padding: 5rem 0; min-height: 70vh;">
-      <div class="container">
-        <span class="section-eyebrow">Phase 02 Architecture</span>
-        <h1 class="section-heading">Global System &amp; Design Architecture Test</h1>
-        <p class="section-desc" style="margin-bottom: 2.5rem;">
-          Testing fixed single-line header, click-only navigation dropdown, mobile drawer, RTL switcher, strict #000000 dark mode, primary CTA, and shared footer.
+    <!-- HERO SECTION WITH CONSISTENT MIN-HEIGHT AND BACKGROUND IMAGE -->
+    <section class="qa-hero-section">
+      <div class="qa-hero-bg-overlay" aria-hidden="true">
+        <img src="assets/images/hero/hero-pumpkin-patch.jpg" alt="Pumpkin Patch farm scenic view" class="qa-hero-bg-img" width="1600" height="900" loading="eager">
+      </div>
+      <div class="container qa-hero-container">
+        <span class="section-eyebrow" style="color:var(--color-sunflower);">Phase 02 Architecture</span>
+        <h1 class="section-heading" style="color:#FAF7F0; text-shadow:0 2px 14px rgba(0,0,0,0.7);">Global System &amp; Design Architecture Test</h1>
+        <p class="section-desc" style="color:#EDE8DE; margin-bottom: 0; text-shadow:0 1px 8px rgba(0,0,0,0.6); max-width:760px; margin-inline:auto;">
+          Testing fixed single-line header, open navigation state, consistent hero height &amp; background imagery across all viewports, strict #000000 dark mode, primary CTA, and shared footer.
         </p>
+      </div>
+    </section>
+
+    <section style="padding: 3.5rem 0;">
+      <div class="container">
 
         <!-- Diagnostic Verification Matrix -->
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-bottom: 3rem;">
